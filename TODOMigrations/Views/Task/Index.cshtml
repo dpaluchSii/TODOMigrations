@@ -1,13 +1,11 @@
 ﻿@model IEnumerable<TODOMigrations.Models.Task>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "To Do Application";
 }
-
-<h2>Index</h2>
-
+<br />
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add New Task", "Create")
 </p>
 <table class="table">
     <tr>
@@ -35,9 +33,9 @@
             @Html.DisplayFor(modelItem => item.When)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TaskID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TaskID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TaskID })
+            @Html.ActionLink("Edit Task", "Edit", new { id=item.TaskID }) |
+           
+            @Html.ActionLink("Delete Task", "Delete", new { id=item.TaskID })
         </td>
     </tr>
 }

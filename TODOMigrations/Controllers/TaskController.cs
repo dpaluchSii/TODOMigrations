@@ -18,7 +18,7 @@ namespace TODOMigrations.Controllers
         // GET: Task
         public ActionResult Index()
         {
-            return View(db.Tasks.ToList());//
+            return View(db.Tasks.ToList());
         }
 
         // GET: Task/Details/5
